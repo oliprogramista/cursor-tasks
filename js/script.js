@@ -7,6 +7,7 @@ const MIN_VALUE = Math.min(priceApple, priceOrange, priceTomato);
 const SUM_VALUE = [priceApple + priceOrange + priceTomato];
 
 console.log(SUM_VALUE);
+document.writeln(SUM_VALUE);
 
 let priceOrangeFloor = Math.floor(priceOrange);
 let priceAppleFloor = Math.floor (priceApple);
