@@ -34,8 +34,10 @@ console.log(mediumPrice);
 const mediumPrice1 = Math.round([mediumPrice] / 0.01) * 0.01;
 console.log (mediumPrice1);
 
-const discount = [SUM_VALUE * Math.random()];
+const DISCOUNT_PERCENTAGE = Math.random();
+const discount = [SUM_VALUE * DISCOUNT_PERCENTAGE];
 console.log (discount);
+document.writeln("Discount: " + [DISCOUNT_PERCENTAGE * 100] + "%");
 const finalPrice = Math.round([SUM_VALUE - discount] / 0.01) * 0.01;
 console.log(finalPrice);
 
