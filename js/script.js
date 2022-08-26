@@ -1,5 +1,6 @@
 let priceOrange = 15.678;
 document.writeln("Ціна апельсинів: " + priceOrange + "грн.");
+<br></br>;
 let priceApple = 123.965;
 document.writeln("Ціна яблук: " + priceApple + "грн.");
 let priceTomato = 90.2345;
