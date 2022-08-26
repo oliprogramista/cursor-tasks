@@ -1,13 +1,16 @@
 let priceOrange = 15.678;
+document.writeln("Ціна апельсинів: " + priceOrange + "грн.");
 let priceApple = 123.965;
+document.writeln("Ціна яблук: " + priceApple + "грн.");
 let priceTomato = 90.2345;
+document.writeln("Ціна помідор: " + priceTomato + "грн.");
 
 const MAX_VALUE = Math.max(priceApple, priceOrange, priceTomato);
+document.writeln("Максимальне число: " + MAX_VALUE);
 const MIN_VALUE = Math.min(priceApple, priceOrange, priceTomato);
+document.writeln("Мінімальне число: " + MIN_VALUE);
 const SUM_VALUE = [priceApple + priceOrange + priceTomato];
-
-console.log(SUM_VALUE);
-document.writeln("SUM_VALUE:" + SUM_VALUE);
+document.writeln("Сума трьох чисел: " + MAX_VALUE);
 
 let priceOrangeFloor = Math.floor(priceOrange);
 let priceAppleFloor = Math.floor (priceApple);
