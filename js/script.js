@@ -1,17 +1,16 @@
 let priceOrange = 15.678;
-document.writeln("Ціна апельсинів: " + priceOrange + "грн.");
-<br></br>;
+document.writeln("Ціна апельсинів: " + priceOrange + "грн." + "<br/>");
 let priceApple = 123.965;
-document.writeln("Ціна яблук: " + priceApple + "грн.");
+document.writeln("Ціна яблук: " + priceApple + "грн." + "<br/>");
 let priceTomato = 90.2345;
-document.writeln("Ціна помідор: " + priceTomato + "грн.");
+document.writeln("Ціна помідор: " + priceTomato + "грн." + "<br/>");
 
 const MAX_VALUE = Math.max(priceApple, priceOrange, priceTomato);
-document.writeln("Максимальне число: " + MAX_VALUE);
+document.writeln("Максимальне число: " + MAX_VALUE + "<br/>");
 const MIN_VALUE = Math.min(priceApple, priceOrange, priceTomato);
-document.writeln("Мінімальне число: " + MIN_VALUE);
+document.writeln("Мінімальне число: " + MIN_VALUE + "<br/>");
 const SUM_VALUE = [priceApple + priceOrange + priceTomato];
-document.writeln("Сума трьох чисел: " + MAX_VALUE);
+document.writeln("Сума трьох чисел: " + MAX_VALUE + "<br/>");
 
 let priceOrangeFloor = Math.floor(priceOrange);
 let priceAppleFloor = Math.floor (priceApple);
@@ -41,7 +40,7 @@ console.log (mediumPrice1);
 const DISCOUNT_PERCENTAGE = Math.random();
 const discount = [SUM_VALUE * DISCOUNT_PERCENTAGE];
 console.log (discount);
-document.writeln("\nDiscount: " + [DISCOUNT_PERCENTAGE * 100] + "%");
+document.writeln("\nDiscount: " + [DISCOUNT_PERCENTAGE * 100] + "% " + "<br/>");
 const finalPrice = Math.round([SUM_VALUE - discount] / 0.01) * 0.01;
 console.log(finalPrice);
 
