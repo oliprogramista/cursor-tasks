@@ -18,29 +18,30 @@ let priceTomatoFloor = Math.floor (priceTomato);
 
 const SUM_VALUE_ROUND = [priceAppleFloor + priceOrangeFloor + priceTomatoFloor];
 const SUM_VALUE_ROUND_HUNDRED = Math.round ([SUM_VALUE_ROUND] /100) * 100;
-
+document.writeln("Сума товарів округлена: " + SUM_VALUE_ROUND_HUNDRED + "грн." + "<br/>");
 console.log(SUM_VALUE_ROUND);
 console.log(SUM_VALUE_ROUND_HUNDRED);
 
 let isEven = [SUM_VALUE_ROUND % 2] == 0;
 if (isEven) {
-    console.log("even");
+    console.log("yes");
 } else {
-    console.log("odd");   
+    console.log("no");   
 }
-
+document.writeln("Число парне? " + isEven + "<br/>");
 let change500 = [500 - SUM_VALUE_ROUND];
 console.log(change500)
+document.writeln("Решта: " + change500 + "грн." + "<br/>");
 
 const mediumPrice = [(priceApple + priceOrange + priceTomato) / 3];
-console.log(mediumPrice);
-const mediumPrice1 = Math.round([mediumPrice] / 0.01) * 0.01;
-console.log (mediumPrice1);
-
+const mediumPriceRound = Math.round([mediumPrice] / 0.01) * 0.01;
+console.log(mediumPriceRound);
+document.writeln("Середнє значення: " + mediumPriceRound + "<br/>")
 const DISCOUNT_PERCENTAGE = Math.random();
 const discount = [SUM_VALUE * DISCOUNT_PERCENTAGE];
 console.log (discount);
-document.writeln("\nDiscount: " + [DISCOUNT_PERCENTAGE * 100] + "% " + "<br/>");
+document.writeln("Discount: " + [DISCOUNT_PERCENTAGE * 100] + "% " + "<br/>");
 const finalPrice = Math.round([SUM_VALUE - discount] / 0.01) * 0.01;
 console.log(finalPrice);
-
+const INCOME = (SUM_VALUE - (SUM_VALUE/2)) - discount;
+document.writeln("Чистий прибуток: " + INCOME + "грн." + "<br/>")
