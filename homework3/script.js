@@ -8,12 +8,13 @@ function maxNumber(number){
     }
 }
 //2
-function PowerOfNumber(b,e){
-    var pow = 1;
-    for(var i=1; i<=e; i++){
+function powerOfNumber(b,e) {
+    let isNegative = (e<0) 
+    let pow = 1;
+    for(var i=1; i <= Math.abs(e); i++){
         pow = pow*b;
     }
-    return pow;
+    return (isNegative) ? (1 / pow) : pow;
 }
 //3
 function capitalizeFirstLetter(text) {
@@ -42,7 +43,7 @@ function deleteLetters (letter, word) {
 }
 //output
 document.writeln ("Функція №1: " + maxNumber(73489) + '<br/>');
-document.writeln("Функція №2: " + PowerOfNumber(3, 5) + '<br/>');
+document.writeln("Функція №2: " + powerOfNumber(3, 5) + '<br/>');
 document.writeln("Функція №3: " + capitalizeFirstLetter('spAin') + '<br/>');
 document.writeln("Функція №4: " + getPaid(1000) + '<br/>');
 document.writeln("Функція №6: " + countLetter('Асталавіста', 'а') + '<br/>');
