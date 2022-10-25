@@ -19,19 +19,19 @@ function getAverage(...numbers) {
 console.log(getAverage(1, 5, 10, 12));
 //вибрати парні числа
 function filterEvenNumbers(...numbers){
-    let evenNumbers = numbers.filter(x => !(x%2));
+    let evenNumbers = numbers.filter(x => Number.isInteger(x) && !(x%2));
     return evenNumbers;
 }
 console.log(filterEvenNumbers(1, 5, 6, 8, 9, 10));
 //числа, які діляться на 5
 function getDividedByFive(...numbers) {
-    let divideFive = numbers.filter(x => Number.isInteger(x/5));
+    let divideFive = numbers.filter(x => Number.isInteger(x) && !(x%5));
     return divideFive;
 }
 console.log(getDividedByFive(5, 10, 36, 58, 70));
 
 function countPositiveNumbers(...numbers){
-    const positive = numbers.filter(x => (x >= 0));
+    const positive = numbers.filter(x => (Number.isInteger(x) && x >= 0));
     return positive.length;
 }
 console.log(countPositiveNumbers(-5, 3, -7, -9, 8));
