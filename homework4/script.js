@@ -25,7 +25,7 @@ console.log(pairs);
 function studentsThemes(pairs, themes) {
     let pairsThemes = [];    
     for (let i = 0; i < pairs.length; i++) {
-        pairsThemes.push([`${pairs[i]}, ${themes[i]}`]);   
+        pairsThemes.push([`"${pairs[i][0].replace(",", " i")}", "${themes[i]}"`]);   
     }
     return pairsThemes;
 }
@@ -35,7 +35,7 @@ console.log(pairsThemes);
 function studentsMarks (students, marks){
     let studentsMarks = [];
     for (let i = 0; i < students.length; i++) {
-        studentsMarks.push([`${students[i]}, ${marks[i]}`]);  
+        studentsMarks.push(["\"" + students[i] + "\", " + marks[i]]);  
     }
     return studentsMarks;
 }
