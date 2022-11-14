@@ -1,0 +1,29 @@
+#app-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(5, 65px);
+    height: 75vh;
+}
+
+.btn-sound {
+    width: 100%;
+    display: block;
+    height:inherit;
+    font-family: cursive, fantasy;
+    font-size: 24px;
+    font-weight: 400;
+    color: #3e3e3e;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid #3e3e3e;
+    height: 50px;
+    background-color: #c9cdd1;
+    
+}
+.btn-sound:hover {
+    background-color: lightblue;
+}
+

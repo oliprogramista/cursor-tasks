@@ -34,4 +34,4 @@ function countPositiveNumbers(...numbers){
     const positive = numbers.filter(x => (Number.isInteger(x) && x >= 0));
     return positive.length;
 }
-console.log(countPositiveNumbers(-5, 3, -7, -9, 8));
+console.log(countPositiveNumbers(-5, 3, -7, -9, 8, 1, 0));
